@@ -1,6 +1,6 @@
 .cart-dropdown-container {
   position: absolute;
-  width: 260px;
+  width: 240px;
   height: 340px;
   display: flex;
   flex-direction: column;
@@ -10,6 +10,9 @@
   top: 90px;
   right: 40px;
   z-index: 5;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
 
   .empty-message {
     font-size: 18px;
@@ -25,6 +28,13 @@
 
   button {
     margin-top: auto;
-    // font-size: 13px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #ccc; /* Set the thumb color */
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px; /* Adjust the scrollbar width */
   }
 }
